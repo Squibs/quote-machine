@@ -39,7 +39,7 @@ function ajax_request() {
 			},
 
 			error: function() {
-				if (errorControl <= 3) {
+				if (errorControl < 2) {
 					errorControl++;
 					ajax_request();
 				} else {
