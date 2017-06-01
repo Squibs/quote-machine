@@ -9,7 +9,7 @@ function ajax_request() {
 
 	setTimeout(function() {
 		$.ajax({
-			url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
+			url: 'https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
 			success: function(data) {
 
 				post = data.shift();
