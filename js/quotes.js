@@ -50,7 +50,7 @@ function ajax_request() {
 
 					onclickFlag = true;
 
-					$(".content").text("There was an error.");
+					$(".content").html("<p>There was an error.</p>");
 					return;
 				}
 			},
