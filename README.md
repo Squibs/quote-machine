@@ -2,7 +2,7 @@
 
 A random quote machine. Created while going through the intermediate front end development projects at https://freeCodeCamp.com.
 
-## [Front End Development Certification](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification#quote-machine) (Go Back)
+## [Front End Development Projects](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification#quote-machine) (Go Back)
 
 <a href="https://squibs.github.io/quote-machine/" target="_blank"><img src="https://cdn.rawgit.com/Squibs/freeCodeCamp/22c74abc/Images/screenshot-quote-machine.png" height="600" alt="Screenshot of my quote machine project / website"/></a>
 
