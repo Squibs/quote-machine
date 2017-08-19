@@ -6,7 +6,7 @@ A random quote machine. Created while going through the intermediate front end d
 
 <a href="https://squibs.github.io/quote-machine/" target="_blank"><img src="https://cdn.rawgit.com/Squibs/freeCodeCamp/22c74abc/Images/screenshot-quote-machine.png" height="600" alt="Screenshot of my quote machine project / website"/></a>
 
-### [Quote Machine](https://squibs.github.io/quote-machine/) (Click to view functional site)
+### [Quote Machine](https://codepen.io/Sulph/full/mMxJLv/) (Click to view functional site)
 
 <em>Completed June 1, 2017</em>
 
