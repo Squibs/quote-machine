@@ -1,28 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import Counter from './components/counter';
+import './index.css';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      count: 0,
-    };
-  }
-
-  render() {
-    return (
-      <div>
-        <Counter
-          onButtonPress={() => this.setState({ count: this.state.count + 1 })}
-          count={this.state.count}
-        />
-      </div>
-    );
-  }
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(<App />, document.getElementById('root'));
-});
+ReactDOM.render(<App />, document.getElementById('root'));
+registerServiceWorker();
