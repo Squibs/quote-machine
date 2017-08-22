@@ -55,8 +55,15 @@ class App extends Component {
   render() {
     return (
       <div>
-        <QuoteBox quote={this.state.quote} author={this.state.author} />
-        <QuoteControl getNewQuote={() => this.GetNewQuote()} quote={this.state.quote} author={this.state.author} />
+        <QuoteControl
+          getNewQuote={() => this.GetNewQuote()}
+          quote={this.state.quote}
+          author={this.state.author}
+        />
+        <QuoteBox
+          quote={this.state.quote}
+          author={this.state.author}
+        />
       </div>
     );
   }

@@ -2,8 +2,6 @@ import React from 'react';
 
 const QuoteControl = ({ getNewQuote, quote, author }) => {
   const onTweetQuote = () => {
-    console.log(quote[0].props.dangerouslySetInnerHTML.__html);
-
     // convert jsx elements to strings
     const div = document.createElement('div');
     div.innerHTML = quote[0].props.dangerouslySetInnerHTML.__html;
@@ -16,9 +14,14 @@ const QuoteControl = ({ getNewQuote, quote, author }) => {
   };
 
   return (
-    <div>
+    <div className="quote-control">
       <button onClick={() => getNewQuote()}>Quote</button>
-      <button onClick={() => onTweetQuote()}>Tweet</button>
+      <button onClick={() => onTweetQuote()}>
+        <span className="fa-stack fa-2x">
+          <i className="fa fa-square-o fa-stack-2x" />
+          <i className="fa fa-twitter fa-stack-1x" />
+        </span>
+      </button>
     </div>
   );
 };
