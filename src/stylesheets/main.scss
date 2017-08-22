@@ -9,26 +9,22 @@ body {
 .quote-control {
   display: flex;
   justify-content: center;
-  position: fixed;
   width: 100%;
   height: 60px;
-  margin: 0;
   background-color: #313131;
+  position: fixed;
 
   button:first-child {
-    position: fixed;
-    width: 25%;
+    width: 25vw;
     min-width: 100px;
     height: 46px;
-    margin: 7px;
-
+    margin: 0 auto;
+    margin-top: 7px;
     background-color: #313131;
     border: 5px solid white;
     border-radius: 5px;
     color: white;
-    padding: 6px 22px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 20px;
   }
@@ -41,14 +37,14 @@ body {
     padding-bottom: -10px;
     background-color: transparent;
     border: none;
+  }
 
-    i:first-child {
-      color: white;
-    }
+  i:first-child {
+    color: white;
+  }
 
-    i:nth-child(2) {
-      margin-top: -2px;
-    }
+  i:nth-child(2) {
+    margin-top: -2px;
   }
 }
 
