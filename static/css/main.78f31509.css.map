@@ -1,1 +1,0 @@
-{"version":3,"sources":["stylesheets/main.css"],"names":[],"mappings":"AAAA,KACE,WACA,YACA,qBAAuB","file":"static/css/main.78f31509.css","sourcesContent":["body {\n  width: 100%;\n  height: 100%;\n  background-color: #ddd;\n}\n\n\n\n// WEBPACK FOOTER //\n// ./src/stylesheets/main.css"],"sourceRoot":""}
