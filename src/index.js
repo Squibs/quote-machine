@@ -19,6 +19,14 @@ class App extends Component {
   }
 
   GetNewQuote() {
+    // clear previous quote & author; shows loading symbol
+    if (this.state.author) {
+      this.setState({
+        quote: [],
+        author: '',
+      });
+    }
+
     const init = {
       method: 'GET',
       mode: 'cors',
@@ -27,7 +35,7 @@ class App extends Component {
     // using ES6 fetch; not sure if I am using this correctly at all
     // random date variable at the end to get new response every time:
     // setting cach: 'no-cache' or 'reload' or anything wasn't working for me
-    fetch(`http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp&ts=${(new Date().getTime())}`, init)
+    fetch(`https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp&ts=${(new Date().getTime())}`, init)
       .then(response => response.text())
       .then((responseText) => {
         const data = JSON.parse(responseText.slice(5, -1))[0];
@@ -36,7 +44,10 @@ class App extends Component {
             dangerouslySetInnerHTML: { __html: data.content },
             key: data.ID,
           })],
-          author: data.title,
+          author: [React.DOM.div({
+            dangerouslySetInnerHTML: { __html: data.title },
+            key: data.ID,
+          })],
         });
       });
   }
@@ -45,7 +56,7 @@ class App extends Component {
     return (
       <div>
         <QuoteBox quote={this.state.quote} author={this.state.author} />
-        <QuoteControl GetNewQuote={() => this.GetNewQuote()} />
+        <QuoteControl getNewQuote={() => this.GetNewQuote()} quote={this.state.quote} author={this.state.author} />
       </div>
     );
   }

@@ -1,22 +1,26 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class QuoteControl extends Component {
-  constructor(props) {
-    super(props);
-  }
+const QuoteControl = ({ getNewQuote, quote, author }) => {
+  const onTweetQuote = () => {
+    console.log(quote[0].props.dangerouslySetInnerHTML.__html);
 
-  onGetNewQuote() {
-    this.props.GetNewQuote();
-  }
+    // convert jsx elements to strings
+    const div = document.createElement('div');
+    div.innerHTML = quote[0].props.dangerouslySetInnerHTML.__html;
+    const text = (div.textContent || div.innerText || '').trim();
 
-  render() {
-    return (
-      <div>
-        <button onClick={() => this.onGetNewQuote()}>Quote</button>
-        <button>Tweet</button>
-      </div>
-    );
-  }
-}
+    div.innerHTML = author[0].props.dangerouslySetInnerHTML.__html;
+    const person = (div.textContent || div.innerText || '').trim();
+
+    window.open(`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp,SquibsVids&text="${text}" - ${person}`);
+  };
+
+  return (
+    <div>
+      <button onClick={() => getNewQuote()}>Quote</button>
+      <button onClick={() => onTweetQuote()}>Tweet</button>
+    </div>
+  );
+};
 
 export default QuoteControl;

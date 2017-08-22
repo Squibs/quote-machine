@@ -10,7 +10,7 @@ const QuoteBox = ({ quote, author }) => {
   return (
     <div>
       {quote}
-      <span>{author}</span>
+      {author}
     </div>
   );
 };
