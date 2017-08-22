@@ -14,55 +14,38 @@ class App extends Component {
       quote: [],
       author: '',
     };
+
+    this.GetNewQuote();
   }
 
-  GetNewQuote(event) {
-    event.preventDefault();
-    console.log(event);
-
+  GetNewQuote() {
     const init = {
       method: 'GET',
       mode: 'cors',
     };
 
-    fetch('https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1')
-      .then((response) => {
-        if (response.status !== 200) {
-          console.log(`There is a problem. Status Code: ${response.status}`);
-          return;
-        }
-
-        response.json().then((data) => {
-          this.setState({
-            quote: [React.DOM.div({
-              dangerouslySetInnerHTML: { __html: data[0].content },
-              key: data[0].ID,
-            })],
-            author: data[0].title,
-          });
+    // using ES6 fetch; not sure if I am using this correctly at all
+    // random date variable at the end to get new response every time:
+    // setting cach: 'no-cache' or 'reload' or anything wasn't working for me
+    fetch(`http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp&ts=${(new Date().getTime())}`, init)
+      .then(response => response.text())
+      .then((responseText) => {
+        const data = JSON.parse(responseText.slice(5, -1))[0];
+        this.setState({
+          quote: [React.DOM.div({
+            dangerouslySetInnerHTML: { __html: data.content },
+            key: data.ID,
+          })],
+          author: data.title,
         });
       });
-
-    // using es6 fetch; should only not be supported by ms-ie
-    // fetch('http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1', init)
-    //   .then(response => response.json().then((responseData) => {
-    //     console.log(responseData, 'responseData');
-    //     const data = responseData[0];
-    //     this.setState({
-    //       quote: [React.DOM.div({
-    //         dangerouslySetInnerHTML: { __html: data.content },
-    //         key: data.ID,
-    //       })],
-    //       author: data.title,
-    //     });
-    //   }));
   }
 
   render() {
     return (
       <div>
         <QuoteBox quote={this.state.quote} author={this.state.author} />
-        <QuoteControl onNewQuote={event => this.GetNewQuote(event)} />
+        <QuoteControl GetNewQuote={() => this.GetNewQuote()} />
       </div>
     );
   }
