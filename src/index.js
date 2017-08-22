@@ -25,7 +25,7 @@ class App extends Component {
       mode: 'cors',
     };
 
-    fetch('http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1')
+    fetch('https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1')
       .then((response) => {
         if (response.status !== 200) {
           console.log(`There is a problem. Status Code: ${response.status}`);
