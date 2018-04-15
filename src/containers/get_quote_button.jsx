@@ -3,6 +3,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 import { fetchQuote } from '../actions';
+import { clearQuote } from '../actions';
 
 class GetQuoteButton extends Component {
   constructor(props) {
@@ -14,6 +15,7 @@ class GetQuoteButton extends Component {
   onFormSubmit(event) {
     event.preventDefault();
     this.props.fetchQuote();
+    this.props.clearQuote();
   }
 
   render() {
@@ -26,7 +28,7 @@ class GetQuoteButton extends Component {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ fetchQuote }, dispatch);
+  return bindActionCreators({ fetchQuote, clearQuote }, dispatch);
 }
 
 export default connect(null, mapDispatchToProps)(GetQuoteButton);
