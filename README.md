@@ -1,17 +1,20 @@
-# Quote Machine
+# React Boilerplate
 
-A random quote machine. Created while going through the front end frameworks projects at https://beta.freeCodeCamp.com.
+A personal starting point for my own React projects. For now this is a slight variation/bootstrap of Stephen Grider's [ReduxSimpleStarter](https://github.com/StephenGrider/ReduxSimpleStarter). I am aiming to evolve this boilerplate overtime, as I learn, to suite myself.
 
-<em><b>NOTE:</b> I've recreated this project while learning React. To view my non-React version of this project [go here](https://github.com/Squibs/quote-machine/tree/before-react).</em>
+If nothing else this will simply serve to help me understand Webpack more.
 
-## Front End Libraries
+There were a few sources of information about Webpack 4 (or Webpack in general) that really helped me put this together:
 
-<img src="./screenshot-quote-machine.png" target="_blank" alt="Screenshot of my quote machine react project." />
+- The [Webpack guides](https://webpack.js.org/guides/), while outdated at the creation time of this boilerplate, gave me a general flow of the order in-which to learn Webpack.
+- Many of the guides in [Google Developers Web Fundamentals](https://developers.google.com/web/fundamentals/performance/get-started/). The *Web Performance Optimization with Webpack* guides specifically.
+- Also the many references I have scattered throughout, mostly the webpack configuration files; all proved to be useful in various ways.
 
-### [Quote Machine](https://squibs.github.io/quote-machine/) (Click to view functional site)
+---
+---
 
-<em>Completed August 22, 2017</em>
+At the moment I am structuring this boilerplate to not be very portable/modular as it could be. I am putting all assets in one spot. I am definitely looking to use the ducks/re-ducks methods of folder structure in the future. Many projects starting out, as I learn React, are going to be small in nature and as soon as my projects start to get larger... I will definitely be adapting this boilerplate to match.
 
-The first React project I have created. I wanted to start with something I have already done in the past (a quote machine) and recreate it using React.
-
-I feel this was a pretty good starting point into React for myself. I was struggling pretty hard getting into React, and now since going through many different tutorials and through a bit of a [udemy course](https://www.udemy.com/react-redux/), I feel a bit more confident going forward and creating more React projects.
+For future reference (switching from function-first to feature-first folder structure):
+- [Structure your React-Redux project for scalability and maintainability](https://levelup.gitconnected.com/structure-your-react-redux-project-for-scalability-and-maintainability-618ad82e32b7)
+- [Scaling your Redux App with ducks](https://medium.freecodecamp.org/scaling-your-redux-app-with-ducks-6115955638be)
