@@ -12,6 +12,10 @@ class GetQuoteButton extends Component {
     this.onFormSubmit = this.onFormSubmit.bind(this);
   }
 
+  componentDidMount() {
+    this.props.fetchQuote();
+  }
+
   onFormSubmit(event) {
     event.preventDefault();
     this.props.fetchQuote();
