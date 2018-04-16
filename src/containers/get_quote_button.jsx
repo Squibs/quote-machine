@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import { fetchQuote } from '../actions';
-import { clearQuote } from '../actions';
+import { fetchQuote, clearQuote } from '../actions';
 
 class GetQuoteButton extends Component {
   constructor(props) {
@@ -13,7 +12,7 @@ class GetQuoteButton extends Component {
   }
 
   componentDidMount() {
-    this.props.fetchQuote();
+    this.props.fetchQuote(); // initial quote retrieval
   }
 
   onFormSubmit(event) {
