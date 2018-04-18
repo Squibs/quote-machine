@@ -9,20 +9,23 @@ import faCircleNotch from '@fortawesome/fontawesome-free-solid/faCircleNotch';
 
 class Quote extends Component {
   render() {
+    // return loading circle w/ notch
     if (!this.props.quote[0]) {
       return (
-        <FontAwesomeIcon icon={faCircleNotch} size="6x" spin />
+        <div className="quote-box">
+          <FontAwesomeIcon className="quote-load" icon={faCircleNotch} size="6x" spin />
+        </div>
       );
     }
 
     return (
-      <div>
-        <p dangerouslySetInnerHTML={{ __html: this.props.quote[0][0].content }} />
-        <span>{this.props.quote[0][0].title}</span>
+      <div className="quote-box">
+        <p className="quote-text" dangerouslySetInnerHTML={{ __html: this.props.quote[0].content }} />
+        <span className="quote-author" dangerouslySetInnerHTML={{ __html: this.props.quote[0].title }} />
       </div>
     );
   }
-};
+}
 
 function mapStateToProps({ quote }) {
   return { quote };

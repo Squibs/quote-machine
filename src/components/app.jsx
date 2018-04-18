@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
 
-import GetQuoteButton from '../containers/get_quote_button';
-import Quote from '../containers/quote';
+import QuoteControls from './quote_controls';
+import Quote from './quote';
 
 /* eslint-disable react/prefer-stateless-function */
 
@@ -10,8 +10,13 @@ class App extends Component {
   render() {
     return (
       <div>
-        <GetQuoteButton />
+        <QuoteControls />
         <Quote />
+        <footer className="footer text-muted">
+          <div className="footer-block">
+            Created and Designed by <a href="https://github.com/Squibs" target="_blank" rel="noopener noreferrer">Zachary Holman</a>
+          </div>
+        </footer>
       </div>
     );
   }

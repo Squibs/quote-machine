@@ -14,7 +14,7 @@ ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
     <App />
   </Provider>,
-  document.querySelector('.container'),
+  document.querySelector('.container-fluid'),
 );
 
 // information about code splitting/lazy-loading (https://engineering.innovid.com/code-splitting-using-lazy-loading-with-react-redux-typescript-and-webpack-4-3ec60140ec5a)

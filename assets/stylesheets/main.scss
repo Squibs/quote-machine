@@ -1,3 +1,93 @@
-.container {
+$primary-color: #dddddd;
+$secondary-color: #313131;
+$accent-color: #ffffff;
+$twitter-blue: #1da1f3;
+
+body {
+  background-color: $primary-color;
+  min-height: 100vh;
+}
+
+.container-fluid {
   font-family: 'rtRaleway';
+  padding: 0;
+}
+
+.container-fluid > div:first-child {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.quote-control {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  background-color: $secondary-color;
+
+  button:first-child {
+    width: 25%;
+    min-width: 100px;
+    height: 46px;
+    margin: 7px;
+    background-color: $secondary-color;
+    border: 5px solid $accent-color;
+    border-radius: 5px;
+    color: $accent-color;
+    padding: 0 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+  }
+
+  a:first-of-type {
+    position: absolute;
+    top: 5px;
+    right: 2.5%;
+    color: $twitter-blue;
+    border-color: $secondary-color;
+
+    @media screen and (max-width: 400px) {
+      position: relative;
+      right: 0%;
+      padding-left: 5px;
+    }
+  }
+
+  .fa-twitter {
+    stroke: $accent-color;
+    stroke-width: 15;
+  }
+}
+
+.quote-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  flex: 1;
+
+  .quote-text {
+    text-align: center;
+    font-size: 1.75em;
+    margin: 10px;
+    margin-top: 10px;
+  }
+
+  .quote-author {
+    font-size: 1.25em;
+    font-style: italic;
+  }
+
+  .quote-load {
+    margin-top: 10px;
+  }
+}
+
+.footer {
+  height: 35px;
+  text-align: center;
+  margin-top: 20px;
 }

@@ -89,14 +89,14 @@ module.exports = {
     new HtmlWebpackPlugin({ // list of options (https://github.com/jantimon/html-webpack-plugin#options)
       inject: false,
       template: HtmlWebpackTemplate, // better default template for HtmlWebpackPlugin (https://github.com/jaketrent/html-webpack-template)
-      title: 'React Redux Boilerplate',
+      title: 'Quote Machine',
       meta: [
         {
           name: 'viewport',
           content: 'width=device-width, initial-scale=1, shrink-to-fit=no',
         },
       ],
-      bodyHtmlSnippet: '<div class="container"></div>',
+      bodyHtmlSnippet: '<div class="container-fluid"></div>',
       inlineManifestWebpackName: 'webpackManifest',
     }),
     new WebpackInlineManifestPlugin(), // using a fork of inline-manifest-webpack-plugin for webpack 4 (https://github.com/szrenwei/inline-manifest-webpack-plugin/issues/10)
