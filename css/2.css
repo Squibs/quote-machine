@@ -1394,13 +1394,13 @@ body {
 
 @font-face {
   font-family: 'rtRaleway';
-  src: url(/webfonts/rtraleway-regular-webfont.eot);
+  src: url(quote-machine/webfonts/rtraleway-regular-webfont.eot);
   /* IE9 Compat Modes */
-  src: url(/webfonts/rtraleway-regular-webfont.eot?#iefiex) format("embedded-opentype"), url(/webfonts/rtraleway-regular-webfont.woff2) format("woff2"), url(/webfonts/rtraleway-regular-webfont.woff) format("woff"), url(/webfonts/rtraleway-regular-webfont.ttf) format("truetype"), url(/webfonts/rtraleway-regular-webfont.svg) format("svg");
+  src: url(quote-machine/webfonts/rtraleway-regular-webfont.eot?#iefiex) format("embedded-opentype"), url(quote-machine/webfonts/rtraleway-regular-webfont.woff2) format("woff2"), url(quote-machine/webfonts/rtraleway-regular-webfont.woff) format("woff"), url(quote-machine/webfonts/rtraleway-regular-webfont.ttf) format("truetype"), url(quote-machine/webfonts/rtraleway-regular-webfont.svg) format("svg");
   /* Legacy iOS */ }
 
 body {
-  background-image: url(/img/Untitled1.png); }
+  background-image: url(quote-machine/img/Untitled1.png); }
 
 
 /*# sourceMappingURL=2.css.map*/
