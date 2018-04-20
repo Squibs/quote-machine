@@ -16,7 +16,6 @@ module.exports = {
     filename: 'js/[name].[hash].js',
     chunkFilename: 'js/chunks/[id]-[name].[chunkhash].js', // code splitting (https://webpack.js.org/guides/code-splitting/)
     path: path.resolve(__dirname, './dist'),
-    publicPath: '/',
   },
 
   resolve: {
