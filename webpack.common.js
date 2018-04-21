@@ -99,6 +99,9 @@ module.exports = {
       ],
       bodyHtmlSnippet: '<div class="container-fluid"></div>',
       inlineManifestWebpackName: 'webpackManifest',
+      // scripts: [
+      //   'https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js', // freeCodeCamp project test suite
+      // ],
     }),
     new WebpackInlineManifestPlugin(), // using a fork of inline-manifest-webpack-plugin for webpack 4 (https://github.com/szrenwei/inline-manifest-webpack-plugin/issues/10)
     new FaviconsWebpackPlugin({ // generates favicons (https://github.com/jantimon/favicons-webpack-plugin)

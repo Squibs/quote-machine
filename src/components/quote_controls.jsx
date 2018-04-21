@@ -42,10 +42,11 @@ class QuoteControls extends Component {
   render() {
     return (
       <form onSubmit={this.onFormSubmit} className="quote-control">
-        <button type="submit">Quote</button>
+        <button type="submit" id="new-quote">Quote</button>
         <a
           target="_blank"
           href={this.currentQuoteInfo()}
+          id="tweet-quote"
         >
           <FontAwesomeIcon icon={faTwitter} size="3x" />
         </a>

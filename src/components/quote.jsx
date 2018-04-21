@@ -20,8 +20,8 @@ class Quote extends Component {
 
     return (
       <div className="quote-box">
-        <p className="quote-text" dangerouslySetInnerHTML={{ __html: this.props.quote[0].content }} />
-        <span className="quote-author" dangerouslySetInnerHTML={{ __html: this.props.quote[0].title }} />
+        <p className="quote-text" id="text" dangerouslySetInnerHTML={{ __html: this.props.quote[0].content }} />
+        <span className="quote-author" id="author" dangerouslySetInnerHTML={{ __html: this.props.quote[0].title }} />
       </div>
     );
   }

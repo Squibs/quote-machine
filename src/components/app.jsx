@@ -9,7 +9,7 @@ import Quote from './quote';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div id="quote-box">
         <QuoteControls />
         <Quote />
         <footer className="footer text-muted">
