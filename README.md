@@ -8,7 +8,7 @@ A random quote machine. Created while going through the front end frameworks pro
 
 <img src="./screenshot-quote-machine.png" target="_blank" alt="Screenshot of my quote machine react project." />
 
-### [Quote Machine](https://squibs.github.io/quote-machine/) (Click to view functional site)
+**No functional version of this project is available, as it is very similar yet another recreation of this project I have done. [View the newest version of this project here](https://github.com/Squibs/quote-machine).**
 
 <em>Completed August 22, 2017</em>
 
