@@ -1,10 +1,10 @@
 # Quote Machine
 
-A random quote machine. Created while going through the front end frameworks projects at [freeCodeCamp](https://freeCodeCamp.org)
+A random quote machine. Created while going through the front end frameworks projects at www.freeCodeCamp.org
 
 **NOTE** *I've recreated this project while learning React. To View my non-React version of this project [go here](https://github.com/Squibs/quote-machine/tree/before-react).*
 
-## Front End Libraries
+## [Front End Libraries](https://github.com/Squibs/freeCodeCamp#freecodecamp) (Go Back to My freeCodeCamp Repository)
 
 <img src="./screenshot-quote-machine.png" target="_blank" alt="Screenshot of my quote machine react project." width="auto" height="400" />
 
