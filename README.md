@@ -4,7 +4,7 @@ A random quote machine. Created while going through the front end frameworks pro
 
 <em><b>NOTE:</b> I've recreated this project while learning React. To view my non-React version of this project [go here](https://github.com/Squibs/quote-machine/tree/before-react).</em>
 
-## Front End Libraries
+## [Front End Libraries](https://github.com/Squibs/freeCodeCamp/blob/master/3.%20Front%20End%20Libraries/7.%20Front%20End%20Libraries%20Projects.md#front-end-libraries-projects) (Go Back to My freeCodeCamp Repository)
 
 <img src="./screenshot-quote-machine.png" target="_blank" alt="Screenshot of my quote machine react project." />
 
