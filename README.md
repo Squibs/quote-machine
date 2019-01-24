@@ -1,8 +1,8 @@
 # Quote Machine
 
-A random quote machine. Created while going through the intermediate front end development projects at https://freeCodeCamp.com.
+A random quote machine. Created while going through the intermediate front end development projects at www.freecodecamp.org.
 
-## [Front End Development Projects](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification#quote-machine) (Go Back)
+## [Front End Development Projects](https://github.com/Squibs/freeCodeCamp/blob/master/3.%20Front%20End%20Libraries/7.%20Front%20End%20Libraries%20Projects.md#front-end-libraries-projects) (Go Back to My freeCodeCamp Repository)
 
 <a href="https://squibs.github.io/quote-machine/" target="_blank"><img src="./img/for_readme/screenshot-quote-machine.png" height="500" alt="Screenshot of my quote machine project / website"/></a>
 
