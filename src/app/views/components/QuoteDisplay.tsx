@@ -1,3 +1,5 @@
+import { faCircleNotch } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 import { AppState } from '../../state/store';
@@ -5,8 +7,7 @@ import { AppState } from '../../state/store';
 /* ------------------------------ Redux Config ------------------------------ */
 
 const mapStateToProps = (state: AppState) => ({
-  quoteAuthor: state.quotes.quotes.author,
-  quoteMessage: state.quotes.quotes.quote,
+  quote: state.quotes.quotes,
 });
 
 const mapDispatchToProps = {};
@@ -21,15 +22,19 @@ type Props = PropsFromRedux;
 
 /* -------------------------------- Component ------------------------------- */
 
-const QuoteDisplay: React.FC<Props> = ({ quoteAuthor, quoteMessage }: Props) => {
-  const createMarkup = () => {
-    return { __html: quoteMessage };
-  };
+const QuoteDisplay: React.FC<Props> = ({ quote }: Props) => {
+  if (!quote.quote || !quote.author) {
+    return (
+      <>
+        <FontAwesomeIcon icon={faCircleNotch} size="6x" spin />
+      </>
+    );
+  }
 
   return (
     <>
-      <div dangerouslySetInnerHTML={createMarkup()} />
-      <i>{quoteAuthor}</i>
+      <div dangerouslySetInnerHTML={{ __html: quote.quote }} />
+      <i>{quote.author}</i>
     </>
   );
 };
