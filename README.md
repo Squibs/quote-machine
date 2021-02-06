@@ -1,21 +1,46 @@
-# Quote Machine
+# Getting Started with Create React App
 
-A random quote machine. Created while going through the front end frameworks projects at www.freeCodeCamp.org
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-**NOTE:** *I have multiple versions of this project. To View my non-React version of this project [go here](https://github.com/Squibs/quote-machine/tree/before-react). To view my React, sans-Redux, version of this project [go here](https://github.com/Squibs/quote-machine/tree/previous-react).*
+## Available Scripts
 
-## [Front End Libraries](https://github.com/Squibs/freeCodeCamp/blob/master/3.%20Front%20End%20Libraries/7.%20Front%20End%20Libraries%20Projects.md#front-end-libraries-projects) (Go Back to My freeCodeCamp Repository)
+In the project directory, you can run:
 
-<img src="./screenshot-quote-machine.png" target="_blank" alt="Screenshot of my quote machine react project." width="auto" height="400" />
+### `yarn start`
 
-### [Quote Machine](https://squibs.github.io/quote-machine/) (Click to view functional site)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-**Completed April 19, 2018**
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-I have decided to re-create the only React project I had previously made.
+### `yarn test`
 
-I have done this project three times now on my path to learning web development. My first time, linked above ([and here](https://github.com/Squibs/quote-machine/tree/before-react)), was originally created as an *Intermediate Front End Development Project* for freeCodeCamp. I later redid the project when I initially went through the *Front End Libraries Projects* on the beta of freeCodeCamp ([previous-react version](https://github.com/Squibs/quote-machine/tree/previous-react)) as a project to learn React. I have now redone the project again, this time using React as well as Redux after a small break to relearn everything about React once again.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Before starting this project I delved into Webpack 4 to learn exactly what that was doing, and so that I knew what was going on in the background instead of using the create-react-app. I created two boilerplates while learning Webpack. The [first one](https://github.com/Squibs/static-site-boilerplate) is a boilerplate for static websites, which I created after doing my first paid freelance project. The [second boilerplate](https://github.com/Squibs/react-redux-boilerplate) is what I created after taking Stephen Grider's **Modern React with Redux** course on *Udemy*. It is a boilerplate for React/Redux projects, that I plan to adapt for myself as I do more React projects.
+### `yarn build`
 
-As I redid the React version of this project, I wanted to keep the same look, and just focus on the React/Redux side of things to really figure out what I am doing. I mostly feel as though I have learned quite a lot about Webpack, and still have a lot to learn about React and Redux. That knowledge will come as I continue to do more of the projects on the beta of freeCodeCamp.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `yarn eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
