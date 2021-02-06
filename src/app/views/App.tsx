@@ -1,7 +1,12 @@
 import React from 'react';
+import { QuoteMachine } from './pages';
 
 const App: React.FC = () => {
-  return <div>App</div>;
+  return (
+    <>
+      <QuoteMachine />
+    </>
+  );
 };
 
 export default App;
