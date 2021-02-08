@@ -29,12 +29,11 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${(props) => props.theme.primary};
   }
 
-  // acting as body https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
-  // QuoteMachine would be main 
+  // sticky footer https://css-tricks.com/couple-takes-sticky-footer/#there-is-flexbox
+  html, body, #root { height: 100%; }
   #root {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
   }
 `;
 

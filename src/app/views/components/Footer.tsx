@@ -7,6 +7,7 @@ const StyledFooter = styled.footer`
   height: 35px;
   text-align: center;
   color: ${(props) => props.theme.secondary};
+  flex-shrink: 0;
 
   & a {
     text-decoration-line: none;

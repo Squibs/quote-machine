@@ -32,7 +32,7 @@ const QuoteDisplayContainer = styled.main`
   align-items: center;
   max-width: 900px;
   margin: 0 auto;
-  flex: 1;
+  flex: 1 0 auto;
 
   // spinner; could inline it, but ehh
   & svg {
