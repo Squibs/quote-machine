@@ -4,6 +4,7 @@ parserOptions:
   project: ./tsconfig.json
 
 extends:
+  - react-app
   - airbnb-typescript
   - airbnb/hooks
   - plugin:@typescript-eslint/recommended
@@ -11,9 +12,6 @@ extends:
   - plugin:prettier/recommended
   - prettier/react
   - prettier/@typescript-eslint
-
-plugins:
-  - '@typescript-eslint'
 
 env:
   browser: true
