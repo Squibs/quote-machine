@@ -9,6 +9,7 @@
     "eject": "react-scripts eject",
     "deploy": "yarn run build && gh-pages -d build -b gh-pages -m Updates"
   },
+  "homepage": ".",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
