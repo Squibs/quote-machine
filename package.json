@@ -6,7 +6,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "yarn run build && gh-pages -d build -b gh-pages -m Updates"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
