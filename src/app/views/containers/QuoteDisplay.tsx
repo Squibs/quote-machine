@@ -71,7 +71,7 @@ const QuoteDisplay: React.FC<Props> = ({ quote, fetchQuote }: Props) => {
       <>
         {/* eslint-disable-next-line react/no-danger */}
         <QuoteTextDiv dangerouslySetInnerHTML={{ __html: quote.quote }} />
-        <QuoteAuthorI>{quote.author}</QuoteAuthorI>
+        <QuoteAuthorI dangerouslySetInnerHTML={{ __html: quote.author }} />
       </>
     );
   };
