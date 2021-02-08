@@ -1,9 +1,9 @@
 import { faCircleNotch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 import styled from 'styled-components';
-import { QuotesState } from '../../state/ducks/quotes/types';
+import { quotesOperations } from '../../state/ducks/quotes';
 import { AppState } from '../../state/store';
 
 /* ------------------------------ Redux Config ------------------------------ */
@@ -12,7 +12,7 @@ const mapStateToProps = (state: AppState) => ({
   quote: state.quotes.quotes,
 });
 
-const mapDispatchToProps = {};
+const mapDispatchToProps = { fetchQuote: quotesOperations.fetchQuote };
 
 const connector = connect(mapStateToProps, mapDispatchToProps);
 
@@ -26,12 +26,13 @@ type Props = PropsFromRedux;
 
 // not sure if I should put in classNames and just put styles on parent
 // or make them all styled elements like I am currently
-const QuoteDisplayContainer = styled.div`
+const QuoteDisplayContainer = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 900px;
   margin: 0 auto;
+  flex: 1;
 
   // spinner; could inline it, but ehh
   & svg {
@@ -54,7 +55,12 @@ const QuoteAuthorI = styled.div`
 
 /* -------------------------------- Component ------------------------------- */
 
-const QuoteDisplay: React.FC<Props> = ({ quote }: Props) => {
+const QuoteDisplay: React.FC<Props> = ({ quote, fetchQuote }: Props) => {
+  // get quote on page load / component mount
+  useEffect(() => {
+    fetchQuote();
+  }, [fetchQuote]);
+
   // show spinner if no quote
   const renderQuote = () => {
     if (!quote.quote || !quote.author) {

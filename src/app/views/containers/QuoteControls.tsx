@@ -27,7 +27,7 @@ type Props = PropsFromRedux;
 
 /* --------------------------------- Styles --------------------------------- */
 
-const QuoteControlContainer = styled.div`
+const QuoteControlContainer = styled.header`
   display: flex;
   justify-content: center;
   height: 60px;

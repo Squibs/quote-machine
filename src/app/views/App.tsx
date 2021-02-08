@@ -1,6 +1,5 @@
 import React from 'react';
 import { createGlobalStyle, DefaultTheme, ThemeProvider } from 'styled-components';
-import { Footer } from './components';
 import { QuoteMachine } from './pages';
 
 // typescript module for styled-components theme so autocomplete works
@@ -30,6 +29,8 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${(props) => props.theme.primary};
   }
 
+  // acting as body https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+  // QuoteMachine would be main 
   #root {
     display: flex;
     flex-direction: column;
@@ -42,8 +43,6 @@ const App: React.FC = () => {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <QuoteMachine />
-      {/* footer would be on every page */}
-      <Footer />
     </ThemeProvider>
   );
 };
