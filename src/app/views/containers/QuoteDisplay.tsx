@@ -2,7 +2,7 @@ import { faCircleNotch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import { quotesOperations } from '../../state/ducks/quotes';
 import { AppState } from '../../state/store';
 
