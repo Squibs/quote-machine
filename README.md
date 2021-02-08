@@ -1,46 +1,22 @@
-# Getting Started with Create React App
+# Quote Machine
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A random quote machine. Created while going through the Front End Libraries projects at [freeCodeCamp.org](https://www.freecodecamp.org/).
 
-## Available Scripts
+_**NOTE:** I have several previous versions of this project:_  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_[Non-React version](https://github.com/Squibs/quote-machine/tree/before-react) - Completed June 1, 2017_  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_[React, sans-Redux](https://github.com/Squibs/quote-machine/tree/old-react) - Completed August 22, 2017_  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_[React-Redux](https://github.com/Squibs/quote-machine/tree/previous-react) - Completed April 19, 2018_
 
-In the project directory, you can run:
+## [Front End Libraries](https://github.com/Squibs/freeCodeCamp/blob/master/3.%20Front%20End%20Libraries/7.%20Front%20End%20Libraries%20Projects.md#front-end-libraries-projects) (Go Back to My freeCodeCamp Repository)
 
-### `yarn start`
+<img src="./screenshot-quote-machine.png" target="_blank" alt="Screenshot of my quote machine react project." width="auto" height="400" />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### [Quote Machine](https://squibs.github.io/quote-machine/) (Click to view functional site)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+_Completed February 8, 2021_
 
-### `yarn test`
+I have come back to this project more times than I thought I ever would. This is the fourth time I have come back to do this project. The first time, linked above ([before-react version](https://github.com/Squibs/quote-machine/tree/before-react)), was originally created as an _Intermediate Front End Development Project_ for freeCodeCamp. I later redid the project when I initially went through the _Front End Libraries Projects_ on the beta of freeCodeCamp ([old-react version](https://github.com/Squibs/quote-machine/tree/old-react)) as a project to learn React. I then came back, yet again, to re-create the project using React as well as Redux ([previous-react version](https://github.com/Squibs/quote-machine/tree/previous-react)).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This time around, on-top-of refreshing my memory of React and Redux, I wanted to learn Typescript. So I took it upon myself, while going through Stephen Grider's **Modern React with Redux** course on _Udemy_, to convert most of the lessons to Typescript ([view my certificate](https://github.com/Squibs/freeCodeCamp/tree/master/Images/certificates#udemy---modern-react-with-redux-by-stephen-grider---certification)). I came back to this project mostly because it was non-functional as the API had changed.
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+This version of this project makes use of React, Redux, Typescript, and Styled-Components. I have also adopted the [re-ducks](https://github.com/alexnm/re-ducks) approach to folder structure... or at least my own version of it. I have a small hold on React-Redux at this point, and feel like I might actually be able to continue forward without having to return to this project again (unless the API changes again, or anything else that might warrant a re-visit).
