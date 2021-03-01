@@ -4,10 +4,10 @@ import styled from 'styled-components/macro';
 /* --------------------------------- Styles --------------------------------- */
 
 const StyledFooter = styled.footer`
-  height: 35px;
   text-align: center;
   color: ${(props) => props.theme.secondary};
-  flex-shrink: 0;
+  flex: none;
+  padding-bottom: 3px;
 
   & a {
     text-decoration-line: none;

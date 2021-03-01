@@ -27,6 +27,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: ${(props) => props.theme.fontFamily};
     background-color: ${(props) => props.theme.primary};
+    min-width: 180px;
   }
 
   // sticky footer https://css-tricks.com/couple-takes-sticky-footer/#there-is-flexbox
