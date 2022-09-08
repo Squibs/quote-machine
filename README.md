@@ -1,6 +1,6 @@
 # Quote Machine
 
-A random quote machine. Created while going through the intermediate front end development projects at www.freecodecamp.org.
+A random quote machine. Created while going through the intermediate front end development projects at www.freeCodeCamp.org.
 
 ## [Front End Development Projects](https://github.com/Squibs/freeCodeCamp/blob/master/3.%20Front%20End%20Libraries/7.%20Front%20End%20Libraries%20Projects.md#front-end-libraries-projects) (Go Back to My freeCodeCamp Repository)
 
